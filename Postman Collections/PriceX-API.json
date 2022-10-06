@@ -1,0 +1,451 @@
+{
+	"info": {
+		"_postman_id": "1eb9c159-7dda-4889-874e-084b79d1d9a6",
+		"name": "Price X API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Upload Pricing Files",
+			"_postman_id": "b73c6a53-b54d-414d-b83d-441a8b5ffb75",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlEwWkdPRFpHUWpORVFqSTBOVEkxTWpVM05ERXlSVEUzTUVJNE9FVkRPRVF6TVRaR1JEWkZNUSJ9.eyJodHRwczovL3FsLmN1c3RvbS5vcGVuaWQuY29tL2NvbW1vbl9pZCI6IjQyNDgzNTkiLCJodHRwczovL3FsLmN1c3RvbS5vcGVuaWQuY29tL3JvY2tfaHVtYW5faWQiOiJkMGYyOTU3Yi0yM2FhLTQ1ZjEtYjdjYy1lMWY1Y2M0Yzk3YWIiLCJodHRwczovL3FsLmN1c3RvbS5vcGVuaWQuY29tL2VtYWlsIjoiUnlhbldhbGtlckByb2NrZXRtb3J0Z2FnZS5jb20iLCJodHRwczovL3FsLmN1c3RvbS5vcGVuaWQuY29tL2Nvbm5lY3Rpb25fbmFtZSI6ImF6dXJlLW1pLWNvcnAtcm9ja2Zpbi1jb20iLCJodHRwczovL3FsLmN1c3RvbS5vcGVuaWQuY29tL2NsaWVudF9uYW1lIjoiUHJpY2VYLVVJLTIwODg2OSIsImh0dHBzOi8vcWwuY3VzdG9tLm9wZW5pZC5jb20vZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJpc3MiOiJodHRwczovL3Nzby50ZXN0LmF1dGhyb2NrLmNvbS8iLCJzdWIiOiJ3YWFkfFhmVzNSekVyUjI3VVhVSHZlUTRlTHNuVHFYWUF2Y0xUbzRPRGJfV1RETTQiLCJhdWQiOlsidXJuOnFsLWFwaTpwcmljZXgtYmZmLTIwODg2OTpUZXN0IiwiaHR0cHM6Ly9zc28tdGVzdC5yb2NrLWRldi5hdXRoMC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNjY0ODU2OTU0LCJleHAiOjE2NjQ4NjA1NTQsImF6cCI6IlNBSDYxMGNPaTVJVEpQeE9DREIyTGVNNkRhRlNweFpMIiwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCBvZmZsaW5lX2FjY2VzcyIsInBlcm1pc3Npb25zIjpbXX0.3KF-tyTj_epyPVInITNdtoOfm3q04kG-IBbEXBx8wvootNPk4gaECD9J8_8I8JICvY5YOeMxYi1zv_jBhHNZ2Tov_Loq20OAhlI3NozCrLs_w_Pp2jm0KLa5MI9Or6kfYgeVH9xImL-v_7U5AKFdPLWHCIqdSkRg3FZP5Xz7_2Pi7oC4OMISABzUd9XJKZejXzTeeB-f2hQ0pCxIGmQH7AmSKq9RA_IJ6OiMnF7ea2CUSPagfjfNJv1n2n6LoI5jKpRfaGMDLChMEfD6zOsmY53Hl1rNbhnyYXqmkwZ0gJ2IepzpxB9xCS6lOc5J8heI2TEDeqm6X0nh0_P-kmPMdQ",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-USER-IDENTITY",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlEwWkdPRFpHUWpORVFqSTBOVEkxTWpVM05ERXlSVEUzTUVJNE9FVkRPRVF6TVRaR1JEWkZNUSJ9.eyJodHRwczovL3FsLmN1c3RvbS5vcGVuaWQuY29tL2NvbW1vbl9pZCI6IjQyNDgzNTkiLCJodHRwczovL3FsLmN1c3RvbS5vcGVuaWQuY29tL3JvY2tfaHVtYW5faWQiOiJkMGYyOTU3Yi0yM2FhLTQ1ZjEtYjdjYy1lMWY1Y2M0Yzk3YWIiLCJodHRwczovL3FsLmN1c3RvbS5vcGVuaWQuY29tL2VtYWlsIjoiUnlhbldhbGtlckByb2NrZXRtb3J0Z2FnZS5jb20iLCJodHRwczovL3FsLmN1c3RvbS5vcGVuaWQuY29tL2Nvbm5lY3Rpb25fbmFtZSI6ImF6dXJlLW1pLWNvcnAtcm9ja2Zpbi1jb20iLCJodHRwczovL3FsLmN1c3RvbS5vcGVuaWQuY29tL2NsaWVudF9uYW1lIjoiUHJpY2VYLVVJLTIwODg2OSIsImh0dHBzOi8vcWwuY3VzdG9tLm9wZW5pZC5jb20vZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJpc3MiOiJodHRwczovL3Nzby50ZXN0LmF1dGhyb2NrLmNvbS8iLCJzdWIiOiJ3YWFkfFhmVzNSekVyUjI3VVhVSHZlUTRlTHNuVHFYWUF2Y0xUbzRPRGJfV1RETTQiLCJhdWQiOlsidXJuOnFsLWFwaTpwcmljZXgtYmZmLTIwODg2OTpUZXN0IiwiaHR0cHM6Ly9zc28tdGVzdC5yb2NrLWRldi5hdXRoMC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNjY0OTk3MTEwLCJleHAiOjE2NjUwMDA3MTAsImF6cCI6IlNBSDYxMGNPaTVJVEpQeE9DREIyTGVNNkRhRlNweFpMIiwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCBvZmZsaW5lX2FjY2VzcyIsInBlcm1pc3Npb25zIjpbXX0.uiep6IwIu4anrC-rEn0OU1Es7q49RIJ40VQB3FnUnC7HQWX6Zs5bbQpOvbk_YQLrQAEYQhHmeQgudV5wbVlnMr7CDR5_E2uho1ogTTnJoEk6686caWtUXcqrdRsmbPMF6D5HwzAYCp9vNVdu5EfctLGmQhKaLW8vY9KUGMEg9jhYpJURO_gqKSsSrb9_VY-b0j5iDg7-Y_FP5zsV2CkOPEcFj-e_T5ut4mC7Os2_nsE7xSv_7PUBGPGDO2yIOssrKNOph-rY9p8X0sUGrkLKfKgJGparAR9kNg_2KJvf1hr5pAE_u0Y_bBHkXGf-Ijnzh6Qo4PMazaYdi9CR9EPuiA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/C:/Users/rwalker4/OneDrive - KNEX/Documents/DailyPricing.csv"
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": "https://localhost:5001/api/pricing-files"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Rate Sheet by Partner",
+			"_postman_id": "1364ed02-4aac-4e66-a676-c3ea5df80b4f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlEwWkdPRFpHUWpORVFqSTBOVEkxTWpVM05ERXlSVEUzTUVJNE9FVkRPRVF6TVRaR1JEWkZNUSJ9.eyJodHRwczovL3FsLmN1c3RvbS5vcGVuaWQuY29tL2NvbW1vbl9pZCI6IjQ0NTY1OTgiLCJodHRwczovL3FsLmN1c3RvbS5vcGVuaWQuY29tL2VtYWlsIjoiSmFrZUhvd2FyZDFAcm9ja2V0bW9ydGdhZ2UuY29tIiwiaHR0cHM6Ly9xbC5jdXN0b20ub3BlbmlkLmNvbS9jb25uZWN0aW9uX25hbWUiOiJhenVyZS1taS1jb3JwLXJvY2tmaW4tY29tIiwiaHR0cHM6Ly9xbC5jdXN0b20ub3BlbmlkLmNvbS9jbGllbnRfbmFtZSI6IlByaWNlWC1VSS0yMDg4NjkiLCJpc3MiOiJodHRwczovL3Nzby50ZXN0LmF1dGhyb2NrLmNvbS8iLCJzdWIiOiJ3YWFkfGNtTzBHY1lRaE12eE9scWNSWDJrbVJMbDlnZlNzdXJ2NXdxWVBORjBvNWMiLCJhdWQiOlsidXJuOnFsLWFwaTpwcmljZXgtYmZmLTIwODg2OTpUZXN0IiwiaHR0cHM6Ly9zc28tdGVzdC5yb2NrLWRldi5hdXRoMC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNjMxODA5MTU3LCJleHAiOjE2MzE4MTI3NTcsImF6cCI6IlNBSDYxMGNPaTVJVEpQeE9DREIyTGVNNkRhRlNweFpMIiwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCBvZmZsaW5lX2FjY2VzcyIsInBlcm1pc3Npb25zIjpbXX0.p5q_oDjMuVtGfDgX3ye1eCN65qF_XJWglQlgAAMwt-LC2Tx5zt-WiJrtK9cA1FZ8A3AoPOpBJTK28BiagHOUQDX6VHAyy9Ji-AdnGlrNNxDMsL76WmPe4UuTN_LKdtC_nW8V5A3p1CfvkYzRhmYAPbmR1PVVcPEIp1c12szefr1tZ1Ww4mbOpixRABYDn6Kcvzs1KhiPm9nbDKqGMzWaUU9NK9Jag8yJzmzcTyg_SNfHEJScSO0EVZ6QKDbnjaYeVelDwlRuQFZiFu90-82D9i3z9Ia9xjGcbTIw0fEstUG8AfBbFIzUCbmk9nqMwobsP1U-Dm2_2grDHBj48c0XKg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"value": null,
+							"disabled": true
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/rate-sheet?partnerKey=mo-st-4ebb22",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"rate-sheet"
+					],
+					"query": [
+						{
+							"key": "partnerKey",
+							"value": "mo-st-4ebb22"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Pricing File By Key",
+			"_postman_id": "5f75f0d7-eb0b-41e7-ad8f-f49ee7d3c388",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": {
+						"clientSecret": "Gh2Vu2yRDYvCA7f3Wt50FiubNcAv9V-FIlHmXHG65mJsMzmxXJV2yGc7o7MHWd-j",
+						"clientId": "JJAXVE1qUcoxPgoHuJhmh2THgbPGP14G",
+						"accessTokenUrl": "https://sso.beta.authrock.com/oauth/token",
+						"audience": {
+							"8e5125d8-62e6-4446-9886-a2c261362d23": "urn:ql-api:pricex-api-209962:Beta"
+						},
+						"addTokenTo": "header",
+						"client_authentication": "header",
+						"tokenName": "PriceX-API",
+						"grant_type": "client_credentials"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlEwWkdPRFpHUWpORVFqSTBOVEkxTWpVM05ERXlSVEUzTUVJNE9FVkRPRVF6TVRaR1JEWkZNUSJ9.eyJodHRwczovL3FsLmN1c3RvbS5vcGVuaWQuY29tL2NvbW1vbl9pZCI6IjQ0NTY1OTgiLCJodHRwczovL3FsLmN1c3RvbS5vcGVuaWQuY29tL2VtYWlsIjoiSmFrZUhvd2FyZDFAcm9ja2V0bW9ydGdhZ2UuY29tIiwiaHR0cHM6Ly9xbC5jdXN0b20ub3BlbmlkLmNvbS9jb25uZWN0aW9uX25hbWUiOiJhenVyZS1taS1jb3JwLXJvY2tmaW4tY29tIiwiaHR0cHM6Ly9xbC5jdXN0b20ub3BlbmlkLmNvbS9jbGllbnRfbmFtZSI6IlByaWNlWC1VSS0yMDg4NjkiLCJpc3MiOiJodHRwczovL3Nzby50ZXN0LmF1dGhyb2NrLmNvbS8iLCJzdWIiOiJ3YWFkfGNtTzBHY1lRaE12eE9scWNSWDJrbVJMbDlnZlNzdXJ2NXdxWVBORjBvNWMiLCJhdWQiOlsidXJuOnFsLWFwaTpwcmljZXgtYmZmLTIwODg2OTpUZXN0IiwiaHR0cHM6Ly9zc28tdGVzdC5yb2NrLWRldi5hdXRoMC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNjMxODA5MTU3LCJleHAiOjE2MzE4MTI3NTcsImF6cCI6IlNBSDYxMGNPaTVJVEpQeE9DREIyTGVNNkRhRlNweFpMIiwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCBvZmZsaW5lX2FjY2VzcyIsInBlcm1pc3Npb25zIjpbXX0.p5q_oDjMuVtGfDgX3ye1eCN65qF_XJWglQlgAAMwt-LC2Tx5zt-WiJrtK9cA1FZ8A3AoPOpBJTK28BiagHOUQDX6VHAyy9Ji-AdnGlrNNxDMsL76WmPe4UuTN_LKdtC_nW8V5A3p1CfvkYzRhmYAPbmR1PVVcPEIp1c12szefr1tZ1Ww4mbOpixRABYDn6Kcvzs1KhiPm9nbDKqGMzWaUU9NK9Jag8yJzmzcTyg_SNfHEJScSO0EVZ6QKDbnjaYeVelDwlRuQFZiFu90-82D9i3z9Ia9xjGcbTIw0fEstUG8AfBbFIzUCbmk9nqMwobsP1U-Dm2_2grDHBj48c0XKg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://{{BASE_URL}}/api/product-pricing/?requestedDateTime=2022-06-17T10:30:00AM",
+					"protocol": "https",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"product-pricing",
+						""
+					],
+					"query": [
+						{
+							"key": "requestedDateTime",
+							"value": "2022-06-17T10:30:00AM"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product Pricing",
+			"_postman_id": "a1d3bca1-241b-4a7e-9fd3-e612fecad12d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlEwWkdPRFpHUWpORVFqSTBOVEkxTWpVM05ERXlSVEUzTUVJNE9FVkRPRVF6TVRaR1JEWkZNUSJ9.eyJodHRwczovL3FsLmN1c3RvbS5vcGVuaWQuY29tL2NvbW1vbl9pZCI6IjQ0NTY1OTgiLCJodHRwczovL3FsLmN1c3RvbS5vcGVuaWQuY29tL2VtYWlsIjoiSmFrZUhvd2FyZDFAcm9ja2V0bW9ydGdhZ2UuY29tIiwiaHR0cHM6Ly9xbC5jdXN0b20ub3BlbmlkLmNvbS9jb25uZWN0aW9uX25hbWUiOiJhenVyZS1taS1jb3JwLXJvY2tmaW4tY29tIiwiaHR0cHM6Ly9xbC5jdXN0b20ub3BlbmlkLmNvbS9jbGllbnRfbmFtZSI6IlByaWNlWC1VSS0yMDg4NjkiLCJpc3MiOiJodHRwczovL3Nzby50ZXN0LmF1dGhyb2NrLmNvbS8iLCJzdWIiOiJ3YWFkfGNtTzBHY1lRaE12eE9scWNSWDJrbVJMbDlnZlNzdXJ2NXdxWVBORjBvNWMiLCJhdWQiOlsidXJuOnFsLWFwaTpwcmljZXgtYmZmLTIwODg2OTpUZXN0IiwiaHR0cHM6Ly9zc28tdGVzdC5yb2NrLWRldi5hdXRoMC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNjMxODA5MTU3LCJleHAiOjE2MzE4MTI3NTcsImF6cCI6IlNBSDYxMGNPaTVJVEpQeE9DREIyTGVNNkRhRlNweFpMIiwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCBvZmZsaW5lX2FjY2VzcyIsInBlcm1pc3Npb25zIjpbXX0.p5q_oDjMuVtGfDgX3ye1eCN65qF_XJWglQlgAAMwt-LC2Tx5zt-WiJrtK9cA1FZ8A3AoPOpBJTK28BiagHOUQDX6VHAyy9Ji-AdnGlrNNxDMsL76WmPe4UuTN_LKdtC_nW8V5A3p1CfvkYzRhmYAPbmR1PVVcPEIp1c12szefr1tZ1Ww4mbOpixRABYDn6Kcvzs1KhiPm9nbDKqGMzWaUU9NK9Jag8yJzmzcTyg_SNfHEJScSO0EVZ6QKDbnjaYeVelDwlRuQFZiFu90-82D9i3z9Ia9xjGcbTIw0fEstUG8AfBbFIzUCbmk9nqMwobsP1U-Dm2_2grDHBj48c0XKg",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  \"123\"\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/product-pricing?requestedDateTime=2022-06-17T10%3A58%3A00-04%3A00",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"product-pricing"
+					],
+					"query": [
+						{
+							"key": "requestedDateTime",
+							"value": "2022-06-17T10%3A58%3A00-04%3A00"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Adjustment",
+			"_postman_id": "18ca1f5b-94d1-412b-96a8-f50e8369ac0c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"adjustmentKey\": \"test-key-1\",\r\n  \"adjustmentGroupKey\": \"3952d8f2-05b3-11ec-b00f-0242ac1f0002\",\r\n  \"adjustmentName\": \"Test Adjustment\",\r\n  \"adjustmentDescription\": \"This is a test adjustment.\",\r\n  \"adjustmentType\": 2,\r\n  \"numberOfDays\": 15,\r\n  \"subjectToLlpaCap\": 1,\r\n  \"agencyShortName\": \"JUMBO\",\r\n  \"partnerKey\": \"mo-st-4ebb22\",\r\n  \"jsonRule\": \"'name':'value'\",\r\n  \"versionNumber\": 1,\r\n  \"ruleEffectiveDatetime\": \"2021-11-30T19:48:46.577Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{Api_Url}}adjustment"
+			},
+			"response": []
+		},
+		{
+			"name": "Call Auth0",
+			"_postman_id": "602b01fd-8563-4474-91f0-d0c2ebc68550",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept": true,
+					"content-type": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": {
+						"accessTokenUrl": "https://sso.test.authrock.com/oauth/token",
+						"addTokenTo": "header",
+						"client_authentication": "header",
+						"audience": {
+							"8e5125d8-62e6-4446-9886-a2c261362d23": "urn:ql-api:pricex-208561:Test"
+						},
+						"tokenName": "PriceX-API",
+						"clientSecret": "05U9f5nUNQ8tLCGAeaGXCRWhfPvnosjhAQYcc86BwyHh-IAw_tRso1ULwFmMoMpE",
+						"clientId": "H8J3dmkjQMb2ik5UsvYq4JcKaXJX5udq",
+						"grant_type": "client_credentials"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/plain",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data; boundary=bb222f62-4d59-4b9c-ac57-79197be63dae",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/C:/Users/rwalker4/OneDrive - KNEX/Downloads/DailyPricing - Copy.csv"
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "https://us-west-2-pricingrules.test.pricingmgmt-np.foc.zone/api/pricing-health",
+					"protocol": "https",
+					"host": [
+						"us-west-2-pricingrules",
+						"test",
+						"pricingmgmt-np",
+						"foc",
+						"zone"
+					],
+					"path": [
+						"api",
+						"pricing-health"
+					],
+					"query": [
+						{
+							"key": "state",
+							"value": "QlV5dERKMDRsSTJMZWxBVGFYcDZoekNTaEVxWHdOZmR+QW5KNU9qUUFTdg==",
+							"disabled": true
+						},
+						{
+							"key": "nonce",
+							"value": "NzNrVUVqTlUxakU5aTExYzNQZXA5R1cuc1VBbl9NWHY3dGlyQlZPbzU1dQ==",
+							"disabled": true
+						},
+						{
+							"key": "code_challenge",
+							"value": "gjbOXREnDaYNdkAUAoQo0748dy2OaduRGYGUvVo03aM",
+							"disabled": true
+						},
+						{
+							"key": "code_challenge_method",
+							"value": "S256",
+							"disabled": true
+						},
+						{
+							"key": "prompt",
+							"value": "none",
+							"disabled": true
+						},
+						{
+							"key": "auth0Client",
+							"value": "eyJuYW1lIjoiYXV0aDAtc3BhLWpzIiwidmVyc2lvbiI6IjEuMTguMCJ9",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AMP updates job record",
+			"_postman_id": "bfea0139-6e69-491e-9f69-11b44823ead5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"value": "*",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"client\": \"amp\",\r\n  \"successful\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BASE_URL}}/job/e61103f2-2e6a-4da0-b17c-3b58047698b7/status"
+			},
+			"response": []
+		},
+		{
+			"name": "Get ProductPricing Base",
+			"_postman_id": "d1b76b60-fc8d-4524-b040-76380d50ea0d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlEwWkdPRFpHUWpORVFqSTBOVEkxTWpVM05ERXlSVEUzTUVJNE9FVkRPRVF6TVRaR1JEWkZNUSJ9.eyJodHRwczovL3FsLmN1c3RvbS5vcGVuaWQuY29tL2NvbW1vbl9pZCI6IjQ0NTY1OTgiLCJodHRwczovL3FsLmN1c3RvbS5vcGVuaWQuY29tL2VtYWlsIjoiSmFrZUhvd2FyZDFAcm9ja2V0bW9ydGdhZ2UuY29tIiwiaHR0cHM6Ly9xbC5jdXN0b20ub3BlbmlkLmNvbS9jb25uZWN0aW9uX25hbWUiOiJhenVyZS1taS1jb3JwLXJvY2tmaW4tY29tIiwiaHR0cHM6Ly9xbC5jdXN0b20ub3BlbmlkLmNvbS9jbGllbnRfbmFtZSI6IlByaWNlWC1VSS0yMDg4NjkiLCJpc3MiOiJodHRwczovL3Nzby50ZXN0LmF1dGhyb2NrLmNvbS8iLCJzdWIiOiJ3YWFkfGNtTzBHY1lRaE12eE9scWNSWDJrbVJMbDlnZlNzdXJ2NXdxWVBORjBvNWMiLCJhdWQiOlsidXJuOnFsLWFwaTpwcmljZXgtYmZmLTIwODg2OTpUZXN0IiwiaHR0cHM6Ly9zc28tdGVzdC5yb2NrLWRldi5hdXRoMC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNjMxODA5MTU3LCJleHAiOjE2MzE4MTI3NTcsImF6cCI6IlNBSDYxMGNPaTVJVEpQeE9DREIyTGVNNkRhRlNweFpMIiwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCBvZmZsaW5lX2FjY2VzcyIsInBlcm1pc3Npb25zIjpbXX0.p5q_oDjMuVtGfDgX3ye1eCN65qF_XJWglQlgAAMwt-LC2Tx5zt-WiJrtK9cA1FZ8A3AoPOpBJTK28BiagHOUQDX6VHAyy9Ji-AdnGlrNNxDMsL76WmPe4UuTN_LKdtC_nW8V5A3p1CfvkYzRhmYAPbmR1PVVcPEIp1c12szefr1tZ1Ww4mbOpixRABYDn6Kcvzs1KhiPm9nbDKqGMzWaUU9NK9Jag8yJzmzcTyg_SNfHEJScSO0EVZ6QKDbnjaYeVelDwlRuQFZiFu90-82D9i3z9Ia9xjGcbTIw0fEstUG8AfBbFIzUCbmk9nqMwobsP1U-Dm2_2grDHBj48c0XKg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"value": null,
+							"disabled": true
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": "https://{{BASE_URL}}/api/product-pricing/base"
+			},
+			"response": []
+		},
+		{
+			"name": "ProductAdjustments",
+			"_postman_id": "a9e825ee-3885-4c99-935d-54274ac1ed14",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-USER-IDENTITY",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlEwWkdPRFpHUWpORVFqSTBOVEkxTWpVM05ERXlSVEUzTUVJNE9FVkRPRVF6TVRaR1JEWkZNUSJ9.eyJodHRwczovL3FsLmN1c3RvbS5vcGVuaWQuY29tL2NvbW1vbl9pZCI6IjQxNzkwODQiLCJodHRwczovL3FsLmN1c3RvbS5vcGVuaWQuY29tL3JvY2tfaHVtYW5faWQiOiI0YzQzNTRmMS1kYzJjLTQ1ZWItYTg4Zi01MTM5ZDhkMzg3MzEiLCJodHRwczovL3FsLmN1c3RvbS5vcGVuaWQuY29tL2VtYWlsIjoiQ2hlbHNlYUFsbGVuQHJvY2tldG1vcnRnYWdlLmNvbSIsImh0dHBzOi8vcWwuY3VzdG9tLm9wZW5pZC5jb20vY29ubmVjdGlvbl9uYW1lIjoiYXp1cmUtbWktY29ycC1yb2NrZmluLWNvbSIsImh0dHBzOi8vcWwuY3VzdG9tLm9wZW5pZC5jb20vY2xpZW50X25hbWUiOiJQcmljZVgtVUktMjA4ODY5IiwiaHR0cHM6Ly9xbC5jdXN0b20ub3BlbmlkLmNvbS9lbWFpbF92ZXJpZmllZCI6ZmFsc2UsImlzcyI6Imh0dHBzOi8vc3NvLnRlc3QuYXV0aHJvY2suY29tLyIsInN1YiI6IndhYWR8MW16cWVPZDRXZ0oyOWRvY2hqLTRENWhJOEFzYmxnMC1GMTQzOEljQjd0ZyIsImF1ZCI6WyJ1cm46cWwtYXBpOnByaWNleC1iZmYtMjA4ODY5OlRlc3QiLCJodHRwczovL3Nzby10ZXN0LnJvY2stZGV2LmF1dGgwLmNvbS91c2VyaW5mbyJdLCJpYXQiOjE2NjQ4OTcxODMsImV4cCI6MTY2NDkwMDc4MywiYXpwIjoiU0FINjEwY09pNUlUSlB4T0NEQjJMZU02RGFGU3B4WkwiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIG9mZmxpbmVfYWNjZXNzIiwicGVybWlzc2lvbnMiOltdfQ.1wx6Uju_xIILbI5F6EtHl-M57ARRQFzAuP8eydOM8A3cIMhNcCl-nIzqwv91BT5eUfGNGzKeXSIOVKwNtc1qBY01IJaMKG5HwXuBrERtx6NmrNKe-SDfmez8h4f71nRAtNqpKabDIpa4MfmXNLNcp9hnBN7mfxUPJNUvVMg1E7vz_WB0SHbU0dNg0CRBFzcmbdq-uU6TXZjGgkKe5VBh1DM-wcjVN1KW8bA8OVpi1JAgWkUeVCyAA6lYF50h7RqLnwsyuBY89dV9od4kVQWPacwEVXZKB4m4cOLFGpKAStrtedpfcurYeM5gfeJnHviZUpXB6xpFJD2BTGvQ8C3uMg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{BASE_URL}}/api/product/adjustment/conv-conf-10y-fixed-9a54b2?current=true&atDateTime=2022-10-04T14%3A19%3A00.289Z&returnAll=true",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"product",
+						"adjustment",
+						"conv-conf-10y-fixed-9a54b2"
+					],
+					"query": [
+						{
+							"key": "current",
+							"value": "true"
+						},
+						{
+							"key": "atDateTime",
+							"value": "2022-10-04T14%3A19%3A00.289Z"
+						},
+						{
+							"key": "returnAll",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "{{ACCESS_TOKEN}}"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "0f18bec7-9765-45f3-9e49-a77dfba81f8f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "fedd697c-49fd-42d2-911a-dddc2c081feb",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
