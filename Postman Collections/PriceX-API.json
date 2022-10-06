@@ -7,7 +7,7 @@
 	"item": [
 		{
 			"name": "Upload Pricing Files",
-			"_postman_id": "b73c6a53-b54d-414d-b83d-441a8b5ffb75",
+			"id": "b73c6a53-b54d-414d-b83d-441a8b5ffb75",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -34,18 +34,15 @@
 							"type": "file",
 							"src": "/C:/Users/rwalker4/OneDrive - KNEX/Documents/DailyPricing.csv"
 						}
-					],
-					"options": {
-						"formdata": {}
-					}
+					]
 				},
-				"url": "https://localhost:5001/api/pricing-files"
+				"url": "https://localhost:5001/api/pricing-files "
 			},
 			"response": []
 		},
 		{
 			"name": "Get Rate Sheet by Partner",
-			"_postman_id": "1364ed02-4aac-4e66-a676-c3ea5df80b4f",
+			"id": "1364ed02-4aac-4e66-a676-c3ea5df80b4f",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -67,10 +64,7 @@
 							"value": null,
 							"disabled": true
 						}
-					],
-					"options": {
-						"formdata": {}
-					}
+					]
 				},
 				"url": {
 					"raw": "https://localhost:5001/api/rate-sheet?partnerKey=mo-st-4ebb22",
@@ -95,7 +89,7 @@
 		},
 		{
 			"name": "Get Pricing File By Key",
-			"_postman_id": "5f75f0d7-eb0b-41e7-ad8f-f49ee7d3c388",
+			"id": "5f75f0d7-eb0b-41e7-ad8f-f49ee7d3c388",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -146,7 +140,7 @@
 		},
 		{
 			"name": "Get Product Pricing",
-			"_postman_id": "a1d3bca1-241b-4a7e-9fd3-e612fecad12d",
+			"id": "a1d3bca1-241b-4a7e-9fd3-e612fecad12d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -189,7 +183,7 @@
 		},
 		{
 			"name": "Add Adjustment",
-			"_postman_id": "18ca1f5b-94d1-412b-96a8-f50e8369ac0c",
+			"id": "18ca1f5b-94d1-412b-96a8-f50e8369ac0c",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -211,7 +205,7 @@
 		},
 		{
 			"name": "Call Auth0",
-			"_postman_id": "602b01fd-8563-4474-91f0-d0c2ebc68550",
+			"id": "602b01fd-8563-4474-91f0-d0c2ebc68550",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
 				"disabledSystemHeaders": {
@@ -256,10 +250,7 @@
 							"type": "file",
 							"src": "/C:/Users/rwalker4/OneDrive - KNEX/Downloads/DailyPricing - Copy.csv"
 						}
-					],
-					"options": {
-						"formdata": {}
-					}
+					]
 				},
 				"url": {
 					"raw": "https://us-west-2-pricingrules.test.pricingmgmt-np.foc.zone/api/pricing-health",
@@ -313,7 +304,7 @@
 		},
 		{
 			"name": "AMP updates job record",
-			"_postman_id": "bfea0139-6e69-491e-9f69-11b44823ead5",
+			"id": "bfea0139-6e69-491e-9f69-11b44823ead5",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
 				"disabledSystemHeaders": {
@@ -344,7 +335,7 @@
 		},
 		{
 			"name": "Get ProductPricing Base",
-			"_postman_id": "d1b76b60-fc8d-4524-b040-76380d50ea0d",
+			"id": "d1b76b60-fc8d-4524-b040-76380d50ea0d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -366,10 +357,7 @@
 							"value": null,
 							"disabled": true
 						}
-					],
-					"options": {
-						"formdata": {}
-					}
+					]
 				},
 				"url": "https://{{BASE_URL}}/api/product-pricing/base"
 			},
@@ -377,7 +365,7 @@
 		},
 		{
 			"name": "ProductAdjustments",
-			"_postman_id": "a9e825ee-3885-4c99-935d-54274ac1ed14",
+			"id": "a9e825ee-3885-4c99-935d-54274ac1ed14",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
